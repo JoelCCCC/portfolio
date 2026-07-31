@@ -27,11 +27,12 @@ Results-driven **Backend Developer** specializing in architecting RESTful APIs u
 - Designed an optimized, fast-paced, and cost-effective AI integration pipeline leveraging LLM caching and low-latency API handlers.
 - **Tech Stack:** Next.js, FastAPI, Gemini API, DeepSeek, Redis, PostgreSQL, Docker, Google OAuth, GitHub
 
-### 🤖 RAG | *Full Stack Developer* (2026)
-*A working Retrieval-Augmented Generation (RAG) system built on 240k football club match records across Europe for sports betting analysis.*
-- Built a working RAG system indexing 240k football club match records across Europe to power sports betting analysis.
-- Engineered the retrieval pipeline using Gemini embeddings stored in pgvector, with DeepSeek as the generative model and caching for low-latency responses.
-- **Tech Stack:** FastAPI, Gemini Embedding Model, pgvector, DeepSeek, Caching
+### 🤖 RAG-Based AI Search System | *Full Stack Developer* (2026)
+*A Retrieval-Augmented Generation backend that answers natural-language questions over 240,000+ historical football matches (scores, stats, and bookmaker odds) with grounded, cited responses.*
+- Built a FastAPI RAG backend indexing **240K+ football matches** from 22 leagues across 11 countries (1993–2026), covering match stats and betting odds.
+- Architected an ingestion pipeline that chunks documents (500 chars, 50 overlap), embeds them in batches via Google Vertex AI `text-embedding-004`, and persists text + embeddings in PostgreSQL.
+- Engineered a lazy-loaded in-memory NumPy search cache delivering ~10ms cosine-similarity retrieval across 240K rows, with DeepSeek generating cited, grounded answers.
+- **Tech Stack:** FastAPI, Google Vertex AI (text-embedding-004), DeepSeek Chat, PostgreSQL, NumPy, Pandas
 
 ### 💳 P2P Money Lending Platform | *API & Database Architect* (2025)
 *A secure backend service powering peer-to-peer financial transactions.*

@@ -3,6 +3,7 @@ import { Contact } from "@/sections/Contact";
 import { About } from "@/sections/About";
 import { Projects } from "@/sections/Projects";
 import { Experience } from "@/sections/Experience";
+import { RAGSection } from "@/sections/RAG";
 import { Navbar } from "@/layout/Navbar";
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
             <main>
                 <Hero/>
                 <About/>
+                <RAGSection/>
                 <Projects/>
                 <Experience/>
                 <Contact/>

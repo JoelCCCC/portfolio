@@ -1,4 +1,4 @@
-import { Sparkles, Brain, CreditCard, Workflow } from "lucide-react";
+import { Sparkles, CreditCard, Workflow } from "lucide-react";
 
 const projects = [
     {
@@ -22,25 +22,6 @@ const projects = [
             "Docker",
             "Google OAuth",
             "GitHub",
-        ],
-    },
-    {
-        icon: Brain,
-        name: "RAG",
-        role: "Full Stack Developer",
-        year: "2026",
-        tagline:
-            "A working Retrieval-Augmented Generation (RAG) system built on 240k football club match records across Europe for sports betting analysis.",
-        points: [
-            "Built a working RAG system indexing 240k football club match records across Europe to power sports betting analysis.",
-            "Engineered the retrieval pipeline using Gemini embeddings stored in pgvector, with DeepSeek as the generative model and caching for low-latency responses.",
-        ],
-        stack: [
-            "FastAPI",
-            "Gemini Embedding Model",
-            "pgvector",
-            "DeepSeek",
-            "Caching",
         ],
     },
     {
