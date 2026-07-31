@@ -5,31 +5,45 @@ import {
     Download,
 } from "lucide-react";
 
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const skills = [
-    "React",
-    "Next.js",
+    "PHP",
+    "Laravel",
+    "Java",
+    "Spring Boot",
+    "Go",
+    "Python",
+    "FastAPI",
+    "JavaScript",
     "TypeScript",
-    "Node.js",
-    "GraphQL",
+    "Next.js",
+    "MySQL",
     "PostgreSQL",
     "MongoDB",
     "Redis",
     "Docker",
-    "AWS",
-    "Vercel",
-    "Tailwind CSS",
-    "Prisma",
-    "Jest",
-    "Cypress",
-    "Figma",
     "Git",
-    "GitHub Actions",
+    "CI/CD",
+    "Kong Gateway",
+    "Gitea",
+    "Cloud Deployment",
+    "System Design",
 ];
 
+const dots = [...Array(30)].map(() => ({
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    duration: 15 + Math.random() * 20,
+    delay: Math.random() * 5,
+}));
+
 export const Hero = () => {
+    const scrollToContact = () => {
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/* Bg */}
@@ -44,18 +58,18 @@ export const Hero = () => {
 
             {/* Green Dots */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                {[...Array(30)].map((_, i) => (
+                {dots.map((dot, i) => (
                     <div
                         key={i}
                         className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                         style={{
                             backgroundColor: "#20B2A6",
-                            left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
+                            left: `${dot.left}%`,
+                            top: `${dot.top}%`,
                             animation: `slow-drift ${
-                                15 + Math.random() * 20
+                                dot.duration
                             }s ease-in-out infinite`,
-                            animationDelay: `${Math.random() * 5}s`,
+                            animationDelay: `${dot.delay}s`,
                         }}
                     />
                 ))}
@@ -69,33 +83,33 @@ export const Hero = () => {
                         <div className="animate-fade-in">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                                Software Engineer • DevOps 
+                                Backend Developer • CS Student
                             </span>
                         </div>
 
                         <div className="space-y-4">
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                                Crafting <span className="text-primary glow-text">digital</span>
+                                Building <span className="text-primary glow-text">backend</span>
                                 <br />
-                                experiences with
+                                systems that
                                 <br />
                                 <span className="font-serif italic font-normal text-white">
-                                    precision.
+                                    scale.
                                 </span>
                             </h1>
 
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                                Hi, I'm Joel Chan — a software engineer specializing in
-                                Laravel, Spring Boot and ReactJS. I build scalable, performant web
-                                applications that users love.
-
-                                I would also like to explore my options as a computer scientist and work in fields such as data science and AI/ML as well
+                                Hi, I'm Joel Chan — a backend developer & computer
+                                science student specializing in Laravel and Spring Boot.
+                                I architect RESTful APIs and relational databases that
+                                power fast, reliable applications, and I'm actively
+                                expanding into AI, ML, and data science.
                             </p>
                         </div>
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
+                            <Button size="lg" onClick={scrollToContact}>
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
                             <AnimatedBorderButton>
@@ -106,15 +120,16 @@ export const Hero = () => {
 
                         {/* Social */}
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-                            <span className="text-sm text-muted-foreground">Follow me: </span>
+                            <span className="text-sm text-muted-foreground">Find me: </span>
                             {[
-                                { icon: FaGithub, href: "#" },
-                                { icon: FaLinkedin, href: "#" },
-                                { icon: FaXTwitter, href: "#" },
+                                { icon: FaGithub, href: "https://github.com/JoelCCCC" },
+                                { icon: FaLinkedin, href: "https://linkedin.com" },
                             ].map((social, idx) => (
                                 <a
                                     key={idx}
                                     href={social.href}
+                                    target="_blank"
+                                    rel="noreferrer"
                                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
                                     {<social.icon className="w-5 h-5" />}
@@ -135,7 +150,7 @@ export const Hero = () => {
                             <div className="relative glass rounded-3xl p-2 glow-border">
                                 <img
                                     src="/MfX2E.jpg"
-                                    alt="Pedro Machado"
+                                    alt="Joel Chan"
                                     className="w-full aspect-[4/5] object-cover rounded-2xl"
                                 />
 
@@ -151,9 +166,9 @@ export const Hero = () => {
 
                                 {/* Stats */}
                                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                                    <div className="text-2xl font-bold text-primary">5+</div>
+                                    <div className="text-2xl font-bold text-primary">3+</div>
                                     <div className="text-xs text-muted-foreground">
-                                        Years Exp.
+                                        Key Projects
                                     </div>
                                 </div>
                             </div>
