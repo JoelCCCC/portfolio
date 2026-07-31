@@ -1,4 +1,4 @@
-import { GraduationCap, Store } from "lucide-react";
+import { GraduationCap, Store, Headset } from "lucide-react";
 
 const experience = [
     {
@@ -8,6 +8,15 @@ const experience = [
         period: "2026",
         points: [
             "Assisted course instructor Haksrun Lao in supporting undergraduate Computer Science students with coursework, programming assignments, and lab exercises.",
+        ],
+    },
+    {
+        icon: Headset,
+        role: "Technical Support & Data Entry",
+        company: "QR",
+        period: null,
+        points: [
+            "Technical customer support and data entry.",
         ],
     },
     {

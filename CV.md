@@ -59,6 +59,10 @@ Results-driven **Backend Developer** specializing in architecting RESTful APIs u
 - Managed direct consumer relations and client communications to optimize customer retention.
 - Scaled operational capacity by designing and implementing an efficient logistics system to streamline business growth.
 
+### 🧑‍💻 Technical Support & Data Entry
+**QR**
+- Technical customer support and data entry.
+
 ---
 
 ## 🎓 Education
