@@ -52,7 +52,7 @@ Results-driven **Backend Developer** specializing in architecting RESTful APIs u
 
 ### 🎓 Teaching Assistant
 **Paragon International University** *(2026)*
-- Assisted course instructor **Mr. Ratana Soth** in supporting undergraduate Computer Science students with coursework, programming assignments, and lab exercises.
+- Assisted course instructor **Haksrun Lao** in supporting undergraduate Computer Science students with coursework, programming assignments, and lab exercises.
 
 ### 📦 Founder & Operations Lead
 **Personal Micro-Business**
